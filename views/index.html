@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/df26bd9708.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="video_player">
+            <div class="video-group">
+                <!-- src="/videos/215407_small.mp4" -->
+                <video preload id="mainvideo">
+
+                    <!-- Add Audio Tracks -->
+                    <!-- <audio data-audio="dubjapan" src="/audios/jp/test.mp3"></audio> -->
+                    <audio data-audio="dubth" src="/audios/th/thaiver.mp3"></audio>
+                </video>
+
+                <div class="backwart-popup">
+                    <p class="icon rewind_popup" id="rewind_popup">
+                        <i class="fa-solid fa-backward"></i>
+                    </p>
+                    <p class="icon forward_popup" id="forward_popup">
+                        <i class="fa-solid fa-forward"></i>
+                    </p>
+                </div>
+                <div class="alert-show qualityPOP">
+                    <p id="qualityMessage"></p>
+                </div>
+                <div class="loading-message" id="loadingMessage">กำลังเปลี่ยนซับ</div>
+
+                <div class="subtitle-srtfile" id="subtitle"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script.js" defer></script>
+</body>
+
+</html>
